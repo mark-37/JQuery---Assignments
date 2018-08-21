@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Assessments</title>
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <div class="container">
+    
+    <div id="three">
+        <h3>
+                3. Write jQuery code to Disable/enable the form submit button.  
+                Disable the submit button until the visitor has clicked a check box.
+        </h3>
+
+        <form>
+            <input type="checkbox" name="check" id="check1">Click Me! <br>
+            <input type="button" value="Enable Me" id="btn1" disabled>
+
+        </form>
+
+    </div>
+
+
+    
+    </div>
+    
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+
+            $('#check1').change(function(){
+        if(this.checked) {
+           $('#btn1').removeAttr('disabled');
+        }
+    });
+
+        });
+
+    </script>
+
+</body>
+</html>

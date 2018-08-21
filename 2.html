@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Assessments</title>
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <div class="container">
+    
+    <div id="two">
+        <h3>
+                2. Write jQuery code to animate below paragraph to fade to a specified opacity (complete the animation within 500 milliseconds).
+        </h3>
+        <br>
+
+        <p id="animateThis">Click this paragraph to see it fade</p>
+
+    </div>
+
+
+    
+    </div>
+    
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+
+          $('#animateThis').on('click', function(){
+        
+      $("#animateThis").animate({ opacity : "0.5" }, 500);
+    
+    });          
+
+        });
+
+    </script>
+
+</body>
+</html>

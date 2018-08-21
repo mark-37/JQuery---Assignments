@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Assessments</title>
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+    
+     <div id="six" >
+        <h3>
+                6. Write JQuery code to set the background color of the 4th div with  red color by adding an appropriate class.
+        </h3>
+        
+        <div>Set the background color</div>
+        <div>Set the background color</div>
+        <div>Set the background color</div>
+        <div>Set the background color of mine to red</div>
+        <div>Set the background color</div>
+        <div>Set the background color</div>
+
+        <button id="button1">Click to see the effect</button>
+    </div>
+
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $('#button1').on("click", function(e){
+
+        var child = $('#six').children("div");
+        
+        child = child[3];
+
+        $(child).addClass('red');
+    });
+
+        });
+    </script>
+
+</body>
+</html>

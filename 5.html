@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Assessments</title>
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <div class="container">
+    
+    <div id="five">
+        <h3>
+                5.  Write JQuery code to find all inputs that are descendants of a form and mark them with a dotted red border.
+        </h3>
+        
+        <form id="fifthForm">
+            <label for="name">Child of form:</label>
+            <input name="name" id="name">
+            
+            <fieldset>
+                    <br>
+                <label for="newsletter">Grandchild of form, child of fieldset</label>
+                <input name="newsletter" id="newsletter">
+            </fieldset>
+            <br>
+        </form>
+        <br>
+        Sibling to form: <input name="none"> <br>
+        <code id="codeTag">
+            
+        </code>
+    </div>
+
+    
+    </div>
+    
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+
+
+        var child = $('#five>form').children('input:only-of-type')
+                .css({"border": "5px solid red"});
+
+        });
+
+    </script>
+
+</body>
+</html>

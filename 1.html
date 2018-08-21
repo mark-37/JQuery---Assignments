@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Assessments</title>
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <div class="container">
+    
+    <div id="one">
+            <h3>1. Write jQuery code to append below div element (and all of its contents) dynamically to the body element. </h3>
+            <br>
+        </div>
+    </div>
+
+    
+    </div>
+    
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+
+            str = `
+    <div>
+    <h1>Jquery</h1>
+    <p>
+        jQuery is a fast and concise Javascript Library created by John Resig
+        in 2006 with a nice motto - write less, do more.
+    </p>
+</div>
+    `;
+
+    $('#one').append(str);
+
+        });
+
+    </script>    
+
+</body>
+</html>
