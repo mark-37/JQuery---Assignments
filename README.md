@@ -4,6 +4,7 @@ index.html contains combined code of all the assignments.
 
 ### Table of Contents
 
++ index.html
 + 1.html
 + 2.html
 + 3.html
